@@ -1,0 +1,31 @@
+body {
+    color: rgb(255, 255, 255);
+    width: 90%;
+    margin: auto;
+    background: rgb(26, 26, 26);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color:rgb(255, 255, 255);
+    text-align: justify;
+}
+
+a {
+    color: rgb(145, 136, 230);
+}
+
+th {
+    padding: 5px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+td {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
