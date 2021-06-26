@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 5</title>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro:</h1>
+    <form>
+        <fieldset>
+            <legend>Conta:</legend>
+            <label for="uname">Nome de Usuário:</label>
+            <br>
+            <input type="text" id="uname" name="uname" autofocus required size="40">
+            <br><br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required autocomplete="off" size="40">
+            <br><br>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" name="senha" required size="40">
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <input type="radio" id="F" name="Pessoa" value="Física">
+            <label for="F">Pessoa Física</label>
+            <input type="radio" id="J" name="Pessoa" value="Jurídica">
+            <label for="J">Pessoa Jurídica</label>
+            <br><br>
+
+            <label for="fname">Nome:</label>
+            <br>
+            <input type="text" id="fname" name="fname" required size="40">
+            <br><br>
+
+            <label for="snome">Sobrenome:</label>
+            <br>
+            <input type="text" id="snome" name="snome" required size="40">
+            <br><br>
+
+            <label for="sexo">Sexo: </label>
+            <select id="sexo" name="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select><br>
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" inputmode="number" minlength="14" maxlength="14" size="11" placeholder="999.999.999-99" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" autocomplete="off">
+            <br><br>
+
+            <label for="cpf">CNPJ:</label>
+            <input type="text" id="cnpj" inputmode="number" minlength="18" maxlength="18" size="16" placeholder="99.999.999/0009-99" pattern="^[0-9]{2}.?[0-9]{3}.?[0-9]{3}/?[0]{3}?[1-2]{1}-?[0-9]{2}" autocomplete="off">
+            <br><br>
+
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone"  size="11" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Resumo:</legend>
+            <textarea name="message" rows="10" cols="95"></textarea><br>
+            <br>
+
+            <label for="tipo">Tipo de Perfil: </label>
+            <input list="tipo" size="10">
+            <datalist id="tipo">
+                <option value="Profissional">
+                <option value="Pessoal">
+            </datalist><br>
+        </fieldset>
+
+        <p style="text-align:center"><input type="submit" value="Cadastrar"></p>
+    </form>
+</body>
+</html>
